@@ -15,7 +15,7 @@ const typesRouter = require('./routes/types');
 const productsRouter = require('./routes/products');
 const votesRouter = require('./routes/votes');
 
-const secret = require('./secret');
+const secret =process.env.SECRET ||require('./secret');
 const { checkUserLogged } = require('./auth/helpers');
 
 const app = express();
