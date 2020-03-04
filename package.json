@@ -4,7 +4,7 @@
   "description": "# Problem:  Around 30 percent of all clothes made around the world are never sold, according to the Australian Circular Textile Association (ACTA) and the cost of this inventory distortion is estimated by IHL Group in 210 billion US dollars.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/bin/www",
+    "start": "node ./backend/bin/www",
     "heroku-postbuild": "cd backend && npm install && cd ../frontend && npm install --only=prod && npm run build",
     "test":  "echo 'Error: no test specified' && exit 1"
     },
