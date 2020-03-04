@@ -1,5 +1,14 @@
 # Fashion-Sustainability
 
+#Login Info
+<h3>User<h3>
+Email: chuck@gmail.com
+Password: password123
+<h3>Brand<h3>
+Email: info@levis.com
+Password: password123
+
+
 # Problem: 
 Around 30 percent of all clothes made around the world are never sold, according to the Australian Circular Textile Association (ACTA) and the cost of this inventory distortion is estimated by IHL Group in 210 billion US dollars.
 
