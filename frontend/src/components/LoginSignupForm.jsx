@@ -5,9 +5,10 @@ import Feedback from './Feedback';
 import Terms from './Terms'
 
 export default function LoginSignupForm (props) {
+    let placeholderUser = (props.userType !== 'brands') ? 'chuck@gmail.com' : 'info@levis.com';
     const [formType, setFormType] = useState('login');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState(placeholderUser);
+    const [password, setPassword] = useState('password123');
     const [brandName, setBrandName] = useState('');
     const [businessId, setBusinessId] = useState('');
     const [firstName, setFirstName] = useState('');

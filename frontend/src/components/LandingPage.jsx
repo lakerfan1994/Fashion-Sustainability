@@ -1,13 +1,17 @@
 import React, {useState, useEffect} from 'react';
+import useForceUpdate from 'use-force-update';
 import axios from 'axios';
 
 import Feedback from './Feedback';
 import LoginSignupForm from './LoginSignupForm';
 
+
+
 export default function LandingPage (props) {
     const [userType, setUserType] = useState('');
     const [randomFact, setRandomFact] = useState('');
     const [networkErr, setNetworkErr] = useState(null);
+    const forceUpdate = useForceUpdate();
 
     const getRandomFact = async () => {
         try {
@@ -19,6 +23,10 @@ export default function LandingPage (props) {
         }
     }
     
+    const showLoginPage = (type) => {
+        setUserType(type);
+        forceUpdate();
+    }
     useEffect(() => {
         getRandomFact();
     }, []);
@@ -44,7 +52,7 @@ export default function LandingPage (props) {
             </div>
 
             <div className='d-flex justify-content-around'>
-                <button className='btn btn-dark' onClick={() => setUserType('users')} >I'm a user</button>
+                <button className='btn btn-dark' onClick={() => {showLoginPage('users')}} >I'm a user</button>
                 <button className='btn btn-dark' onClick={() => setUserType('brands')}>I'm a brand</button>
             </div>
 
