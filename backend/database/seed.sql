@@ -1,9 +1,4 @@
 
-DROP DATABASE IF EXISTS fashion_footprint_db;
-
-CREATE DATABASE fashion_footprint_db;
-\c fashion_footprint_db;
-
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     email VARCHAR UNIQUE NOT NULL,
