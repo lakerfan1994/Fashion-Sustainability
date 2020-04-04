@@ -45,16 +45,26 @@ code {
     height: 100%;
 }
 
-@media screen and (max-width: 400px) {
+
+
+@media screen and (max-width: 420px) {
     .productImg {
       height: 35vh;
       object-fit: scale-down;
     }
 
     .container{
-      height: 130%;
+      height: 140%;
     }
   }
+
+@media screen and (max-width: 320px){
+  .container {
+    height: 180%;
+  }
+}
+
+
 
 @media screen and (max-width: 600px) and (min-width: 400px) {
     .productImg {
