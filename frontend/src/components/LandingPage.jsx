@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import useForceUpdate from 'use-force-update';
 import axios from 'axios';
+import '../index.css';
 
 import Feedback from './Feedback';
 import LoginSignupForm from './LoginSignupForm';
@@ -40,9 +41,9 @@ export default function LandingPage (props) {
     }
 
     return (
-        <div className='container' style={{height: "100%", boxShadow: "6px 11px 17px 2px rgba(0,0,0,0.47)", backgroundColor: "#7BA098"}}>
+        <div className='container' style={{ boxShadow: "6px 11px 17px 2px rgba(0,0,0,0.47)", backgroundColor: "#7BA098"}}>
             <img src={require('../assets/FFlogo.png')} alt="logo" height="240px" width="240px"/>
-            <h1 style={{display: "inline", color: "#CAF7E2"}}>FASHION FOOTPRINT</h1>
+            <h1 style={{display: "inline", color: "#CAF7E2" }}>FASHION FOOTPRINT</h1>
 
             <div className='jumbotron text-center' style={{backgroundColor: "transparent", display: "inline"}}>
                 <div className='container' style={{display: "inline"}}>

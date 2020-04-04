@@ -20,6 +20,8 @@ code {
     monospace;
 }
 
+
+
 .going_to_production_true {
 	color: green;
 }
@@ -39,10 +41,18 @@ code {
   align-items: center;
 }
 
+.container {
+    height: 100%;
+}
+
 @media screen and (max-width: 400px) {
     .productImg {
       height: 35vh;
       object-fit: scale-down;
+    }
+
+    .container{
+      height: 130%;
     }
   }
 
